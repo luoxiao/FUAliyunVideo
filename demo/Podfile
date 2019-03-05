@@ -1,0 +1,42 @@
+# Uncomment the next line to define a global platform for your project
+#platform :ios, '8.0'
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+target 'AliyunVideoClient_Entrance' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AliyunVideoClient_Entrance
+  
+  pod 'LBXScan/LBXNative','~> 2.3'
+  pod 'LBXScan/UI','~> 2.3'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'AFNetworking', '~> 3.0'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'FMDB', '~> 2.5'
+  pod 'JSONModel','~> 1.7.0'
+  pod 'LXReorderableCollectionViewFlowLayout','~> 0.2.1'
+  pod 'TTRangeSlider','~> 1.0.6'
+  # faceunity
+  pod 'Nama', '~> 5.9.0'
+  # 柯南
+  pod 'AlivcConan', '0.9.0'
+  
+  #crash
+#  pod 'AliHAAdapter4poc', '10.0.5.1'
+  pod 'AlicloudHA', '1.0.1-SNAPSHOT'
+  pod 'Reachability', '3.1.1'
+
+  target 'AliyunVideoClient_EntranceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AliyunVideoClient_EntranceUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
